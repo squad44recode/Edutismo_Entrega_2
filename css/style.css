@@ -1,0 +1,328 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   max-width: 1443px;
+}   
+
+
+header {
+   background-image: url('/img/header.svg');
+   justify-content: center;
+   height: 430px;
+}
+
+a > .img-logo{
+   margin-left: 5rem;
+   width: 100%;
+   height: auto;
+}
+
+a {
+   text-decoration: none!important;
+   color: #5E17EB!important;
+}
+
+/*espaçamento entre links*/
+.nav-link{
+   margin-right: 2rem;
+}
+
+/*estilo e fonte links navbar pagina atual*/
+.navbar-nav .nav-link.active{
+   color: #FF792E!important;
+   font-family: 'Montserrat', sans-serif!important;
+}
+
+/*estilo e fonte links navbar*/
+.navbar-nav{
+   --bs-nav-link-color: #021F59!important;
+   --bs-nav-link-hover-color: #5E17EB!important;
+   font-family: 'Montserrat', sans-serif!important;
+}
+
+#btn-entrar{
+   font-family: 'Montserrat', sans-serif!important;
+}
+
+/*Alinhamento do navbar fluid reponsivo*/
+.navbar-collapse {
+   flex-basis: auto!important; 
+   flex-grow: 0!important; 
+   transition: 1s!important;
+}
+
+/*houver e cor dos botoẽs*/
+.btn-warning {
+   --bs-btn-hover-bg: #6acef191!important;
+   --bs-btn-hover-border-color: #ffffff!important;
+   color: #5E17EB!important;
+}
+
+/*Break points | Responsividade da navbar*/ 
+@media only screen and (max-width: 768px) {
+    header {
+      background-image: url('/img/header-resp.svg');
+      height: 400px;
+   } li{
+      font-size: 10px!important;
+   }  #btn-entrar {
+      width: 63px;
+      font-size: 10px;  
+   } .nav-link{
+      margin-right: 0;
+   } 
+}
+
+/*Break points | Responsividade da LOGO*/ 
+@media only screen and (max-width: 980px) {
+   .img-logo {
+      width: 130px!important;
+   }
+}
+
+
+main{
+   padding: 10px;
+}
+
+/*alinhamnto horizontal caixa de texto segunda sessão*/
+#col-cxtxt{
+   align-items: flex-start;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+
+/*alinhamnto e cor do paragrafo texto segunda sessão*/
+.p-txt{
+   color: #021F59;
+   text-align: left;
+   font-family: 'Montserrat', sans-serif;
+}
+
+
+h2{
+   color: #FF792E!important;
+   font-family: 'Fredoka One', cursive;
+   font-size: larger;
+}
+
+/*Break points | Responsividade da main */  
+@media (max-width: 615px) {
+   h2 {
+      font-size: 18px!important;
+   } #col-cxtxt {
+      font-size: 10px;
+      padding-top: 2rem;
+      text-align: center;
+   } #btn-cad {
+      width: 70px;
+      font-size: 10px;
+      font-weight: bold;
+   }
+
+}
+
+section{
+   padding-top: 2rem;
+}
+
+.row{
+   margin-right: 0!important;
+}
+
+.h2-section{
+   color: #FF792E!important;
+   font-family: 'Fredoka One', cursive;
+   text-align: center;
+}
+
+.p-section{
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.section-about{
+   padding-left: 1.5rem;
+}
+
+.card-title{
+   color: #FF792E;
+   text-align: center;
+   font-family: 'Fredoka One', cursive;
+   font-size: larger;
+}
+
+.card-text {
+   font-family: 'Montserrat', sans-serif;
+   color: #021F59;
+   text-align: center;
+}
+
+.linha{
+   width: 1000px;
+   height: 5px;
+   background-color: #FFD51E;
+   
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+
+   margin-top: 2rem;
+}
+
+/*Break points | Responsividade da section about */  
+@media (max-width: 768px) {
+   .h2-section, .card-title {
+      font-size: 18px!important;
+   } .p-section, .card-text {
+      font-size: 10px;
+      padding: 10px;
+      text-align: center;
+   } .card {
+      width: 12rem!important;
+      margin-bottom: 1rem;
+   } .linha{
+      width: 400px;
+   } .card{
+      display: block;
+      margin-left: auto;
+      margin-right:auto ;
+   }
+}
+
+
+.h2-game{
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.game-memo{
+   width: 940px;
+   height: 250px;
+   background-color: #A1D2FF;
+   border-radius: 20px;
+   box-shadow: 0px 0px 9px 0px #515152c9;
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 4rem;
+}
+
+.title-game{
+   color: #FF792E;
+   text-align: left;
+   font-family: 'Fredoka One', cursive;
+
+   padding: 2rem 0 1rem 2rem;
+}
+
+.p-game{
+   font-family: 'Montserrat', sans-serif;
+   color: #021F59;
+   text-align: left;
+   width: 750px;
+   padding: 1.5rem 0 1rem 2rem;
+   z-index: -1;
+   margin-bottom: -14rem;
+}
+
+.btn-game{
+   display: flex;
+   flex-direction: row-reverse;
+   margin-right: -1rem;
+
+}
+
+.btn-play {
+   background-color: #FFD51E;
+   padding: 4rem;
+   border-radius: 10px!important;
+
+   
+   border: #faf8ff!important;
+   box-shadow: 5px 5px 5px #5E17EB;
+
+}
+
+.btn-play:hover{
+   background-color: #FF792E; 
+   
+}
+
+.link-game{
+   text-decoration: none!important;
+   font-family: 'Fredoka One', cursive!important;
+   color: #5E17EB!important;
+   font-size: larger;
+}
+
+
+/*Break points | Responsividade da section Jogos */  
+@media (max-width: 768px) {
+   .h2-game {
+      font-size: 18px;
+      text-align: center;
+
+   }.title-game {
+      font-size: 18px;
+      text-align: left;
+      padding: 0.2rem;
+
+   } .p-game {
+         font-size: 10px;
+         padding: 10px;
+         text-align: left;
+         width: 300px;
+         margin-bottom: -7rem;
+
+   } .game-memo{
+         width: 300px;
+         height: 100px;
+         margin-top: 2rem;
+
+   } .btn-play {
+      padding: .8rem;
+      font-size: 10px;
+      box-shadow: 2px 1px 5px #5e17ebde;
+
+   } .text-muted {
+      font-size: 10px;
+   }
+   
+}
+
+
+.fotos{
+   display: flex;
+   margin-top: 3rem;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+   background-color: #FFD51E;
+    
+}
+
+.fot{
+   flex: auto;
+   margin: 5px;
+   text-align: center;
+   box-shadow: 4px 3px 10px 1px #0000008c;
+}
+
+.fot img{
+   max-width: 100%;  
+}
+
+.text-muted{
+   font-family: 'Montserrat', sans-serif;
+   color: #021F59!important;
+}
+
+.text-muted:hover{
+   color: #FFD51E!important;
+}

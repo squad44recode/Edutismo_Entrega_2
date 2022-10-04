@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edutismo</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+   <!---Fontes-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo.svg" class="img-logo" alt="..."></a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jogo.html">MEMORIZAÇÃO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jogo2.html">JOGO DO CONTRA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">CONTATO</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button id="btn-entrar" class="btn btn-warning btn-lg" href="Login.html">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div id="col-cxtxt" class="col">
+          <h2>Sobre Nós..</h2>
+          <p class="p-txt">Nossa Plataforma permite associar nomes e imagens de objetos, ampliando o vocabulario da criança.</p>
+          <button id="btn-cad" type="button" class="btn btn-warning"><a href="cadastro.html">Cadastre-se</a></button>
+      </div> 
+      <div class="col">
+          <img src="img/intro.svg" class="img-fluid" alt="ICriança jogando peças para cima">
+      </div>
+    </div>      
+  </div>
+  </main>
+
+
+  <section>
+    <h2 class="h2-section">O que eu devo saber sobre o Autismo?</h2>
+    <p class="p-section">O Transtorno do Espectro Autista (TEA) é um distúrbio no desenvolvimento do cérebro que afeta a capacidade de relacionamento com pessoas e o ambiente.</p>
+    <div class="section-about">
+      <div class="row">
+        <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="img/edutismo/educação.png" class="card-img-top" alt="imagem educação">
+                <div class="card-body">
+                  <h5 class="card-title">Educação</h5>
+                  <p class="card-text">Portadores de autismo possuem dificuldades em aprender a utilizar corretamente as palavras, um ensino didático ajuda a criança a desenvolver suas habilidades de linguagem e interação social.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="img/edutismo/acompanhamento.png" class="card-img-top" alt="imagem acompanhamento">
+              <div class="card-body">
+                <h5 class="card-title">Acompanhamento</h5>
+                <p class="card-text">A abordagem educacional apropriada deve ser baseada numa avaliação de especialistas, pais e responsáveis. Afinal, sua maneira de ver o mundo difere das demais crianças.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="img/edutismo/graus.png" class="card-img-top" alt="imagem graus">
+            <div class="card-body">
+              <h5 class="card-title">Graus</h5>
+              <p class="card-text">Cada criança autista tem um grau de dificuldade por ser único. Por isso, os pais devem entender as dificuldades particulares de seus filhos e se adaptar a elas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="img/edutismo/gamificação.png" class="card-img-top" alt="imagem gamificação">
+            <div class="card-body">
+              <h5 class="card-title">Gamificação</h5>
+              <p class="card-text">Os autistas costumam se fixar em jogos, brincadeiras ou personagens específicos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="linha"></div>
+
+  <section class="game">
+    <h2 class="h2-game">Jogos &#127918;</h2>
+
+    <div class="game-memo">
+      <h3 class="title-game">Jogo da Memória</h3>
+      <p class="p-game">Neste jogo o objetivo é memorizar os desenhos e as palavras mostrados e em seguida, você deve comparar para saber o nome correto de cada desenho.</p>
+      <div class="btn-game">
+        <button class="btn-play"><a href="jogo.html" class="link-game">Jogue aqui</a></button>
+      </div>
+    </div>
+
+    
+
+    <div class="game-memo">
+      <h3 class="title-game">Jogo do Contrário</h3>
+      <p class="p-game">Neste jogo o objetivo é encontrar o par contrário a palavra sorteada, mas pode ser jogado conforme a imaginação.</p>
+      <div class="btn-game">
+        <button class="btn-play"><a href="jogo2.html" class="link-game">Jogue aqui</a></button>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="fotos">
+      <span class="fot">
+          <img src="img/edutismo/familia.jpg">
+      </span>
+      <span class="fot">
+          <img src="img/edutismo/autism.jpg">
+      </span>
+      <span class="fot">
+          <img src="img/edutismo/kid.jpg">
+      </span>
+  </div>
+   </section>
+
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="cadastro.html" class="nav-link px-2 text-muted"> Cadastro </a></li>
+      <li class="nav-item"><a href="Login.html" class="nav-link px-2 text-muted"> Login</a></li>
+      <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-muted">Contato</a></li>
+    </ul>
+    <p class="text-center text-muted">© 2022 EduTismo, Inc</p>
+  </footer>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+</html>
